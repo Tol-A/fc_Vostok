@@ -1,0 +1,27 @@
+.container_homeCarusel {
+    width: 100%;
+    background:url(../../../images/fon1.jpeg) ;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+@media (max-width: 1250px){
+    .container_homeCarusel {
+        display: block;
+    }
+}
+
+@media (max-width: 1250px){
+    .container_homeCarusel{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 690px){
+    .container_homeCarusel{
+        padding: 0;
+    }
+}

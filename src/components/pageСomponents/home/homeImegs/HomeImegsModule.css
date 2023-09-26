@@ -1,0 +1,14 @@
+.homeImages {
+    background-color:rgb(34, 120, 224);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-columns: repeat(4,1fr) ;
+    justify-items: center;
+    gap: 30px;
+}
+.image {
+    border: 1px solid white;
+    width: 100%;
+    max-width: 200px;
+}

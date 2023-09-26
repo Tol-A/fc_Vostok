@@ -1,0 +1,301 @@
+  .nav {
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+  }
+  .splitList {
+    height:25% ;
+    width: 1px;
+    border-left: 2px solid #8b9195;
+    margin: 0 10px;
+  }
+  .nav_link {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   color: white;
+  }
+  .nav_link .a{
+    margin-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .nav_link .a:hover {
+    display: inline-block;
+    border-bottom: 3px solid rgb(41, 75, 149);
+    padding-bottom: 5px;
+    color:greenyellow;
+  }
+  .nav_link >*:hover{
+    color: greenyellow;
+  }
+  .logo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+  }
+
+
+  @media (max-width: 1130px){
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center
+    }
+   
+    .logo {
+        max-width: 350px;
+        height: auto;
+    }
+    .nav_link {
+        margin:15px 0;
+    }
+  }
+  @media (max-width: 635px){
+    .logo{
+        max-width: 300px;
+        height: auto;
+    }
+    .nav_link {
+        display: none;
+    }
+    
+    nav {
+        display:flex;
+        flex-direction: column;
+    }
+  }
+  @media (max-width: 255px){
+    .logo {
+        display: none;
+    }
+  }
+  @media (min-width: 636px){
+    .navbar-toggler{
+        display: none;
+    }
+  }
+  @media (max-width: 636px){
+    .navbar-toggler{
+        display: block;
+    }
+  
+  }
+
+
+  /* выпадающий список  меню */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+
+  .dropbtn {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: greenyellow;
+  }
+
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center
+  }
+
+  .dropdown-content a:hover {color: greenyellow;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .school_list{
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    background-color: #0f79d5;
+    border: 0.5px solid  #022c50;
+    border-radius: 0.25rem;
+    width: 300px;
+  }
+  .school_list li {
+    width: 100%;
+    padding: 0.25rem 1rem;
+    white-space: nowrap;
+  }
+  .school_list li a {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  .arrow  li{
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+  .arrow:hover::before{
+    content: '›  ';
+    font-weight: bold;
+    position: relative;
+    animation: mymove 0.2s infinite; 
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin-left: -10px;
+
+  }
+
+  @keyframes mymove {
+    from {left: -20px;}
+    to {left: -1px;}
+  }
+
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+.container_switch {
+  display: flex;
+  align-items: center;
+}
+/* переключатель !!!!!!!*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Скрыть флажок HTML по умолчанию */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Ползунок */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0b80e7;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(121, 119, 109);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (max-width: 636px){
+  .switch{
+      display: none;
+  }
+}
+
+
+
+#light header {
+  background-color: #0b6bbf;
+  color:white
+}
+#dark  header{
+  background-color: grey;
+  color:gold
+}
+
+#dark  header .school_list{
+  background-color: rgb(183, 175, 175);
+} 
+#dark  header .school_list a{
+  color: black;
+}
+#dark  header .school_list a:hover{
+  color: greenyellow;
+}  
+#dark  header .accordion-label{
+  background-color: grey;
+} 
+#dark  header .accordion-content{
+  background-color: rgb(142, 151, 165);
+} 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+ 
+
+

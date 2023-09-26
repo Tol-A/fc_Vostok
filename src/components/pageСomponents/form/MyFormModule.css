@@ -1,0 +1,12 @@
+.myForm{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text_form{
+    color: blue;
+}
+.input_form{
+    background-color: rgb(244, 246, 248);
+    border: 2px solid grey
+}

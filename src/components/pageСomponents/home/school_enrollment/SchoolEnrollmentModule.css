@@ -1,0 +1,32 @@
+.contaoner_SchoolEnrollment {
+    background-color: #0b6bbf;;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+.btn_SchoolEnrollment{
+    text-transform:uppercase;
+    font-size: 12px;
+}
+.contaoner_SchoolEnrollment p {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+@media (max-width: 1050px) {
+    .contaoner_SchoolEnrollment {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .contaoner_SchoolEnrollment p {
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 800px) {
+    .contaoner_SchoolEnrollment {
+        padding:  12px;
+        text-align: center;
+    }
+}

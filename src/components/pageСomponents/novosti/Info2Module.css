@@ -1,0 +1,22 @@
+.car img{
+   max-width: 600px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.car b {
+    margin-left: 2rem;
+    text-indent: 2rem;
+}
+.car h4 {
+    text-align: center;
+    margin: 1rem 0;
+  
+}
+.car strong {
+   text-align: center;
+}
+.car p{
+   text-align: left;
+   text-indent: 2rem;
+}
+

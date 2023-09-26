@@ -1,0 +1,44 @@
+.container_info{
+    background: url(../../images/fon-block4.gif);
+}
+.card h2 {
+    text-align: center;
+}
+.card hr {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card span{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3rem;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.card img {
+    padding: 0 2rem;;
+}
+.card h6 {
+    margin: 1.5rem 4rem;
+}
+.card p{
+    margin:  0 2rem;
+    margin-bottom: 1rem;
+}
+.card strong {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.card li {
+    margin:  0.2rem 2rem;
+}
+.info_text {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+.info_text div{
+    margin-bottom: 5px;
+}
+.info_text .on{
+   margin-left: 2rem;
+}

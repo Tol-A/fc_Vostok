@@ -1,0 +1,14 @@
+.container_about_school{
+    background: url('../../images/fon-block4.gif');
+}
+.new_card{
+    margin: 0 3rem;
+    padding: 3rem;
+    border-radius: 0px;
+}
+.text_card{
+    margin: 2rem 0;
+}
+.text_indent{
+   text-indent: 30px;
+}

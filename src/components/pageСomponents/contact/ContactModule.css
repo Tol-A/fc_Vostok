@@ -1,0 +1,19 @@
+.container_contact{
+    background: url(../../images/fon-block4.gif);
+    height: auto;
+}
+.contact{
+    background-color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:   40px ;
+}
+.contact h1 {
+    padding-top: 10px;
+}
+.write {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}

@@ -1,0 +1,9 @@
+.carusel_block {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;  
+}
+.carusel_block img{
+   height: 350px;  
+}
+
